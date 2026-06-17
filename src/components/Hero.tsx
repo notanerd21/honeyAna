@@ -21,13 +21,13 @@ export function Hero() {
           tone="#c8881e"
           className="w-full h-full object-cover"
         />
-        {/* light cream scrim on the left so dark text stays readable while the honey gold shows on the right */}
-        <div className="absolute inset-0 bg-gradient-to-r from-cream/96 via-cream/80 to-cream/15" />
-        <div className="absolute inset-0 bg-gradient-to-t from-cream/45 to-transparent" />
+        {/* lighter, left-weighted scrim: keeps text readable on the left while the honey video stays vivid on the right */}
+        <div className="absolute inset-0 bg-gradient-to-r from-cream/95 via-cream/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-cream/25 to-transparent" />
       </div>
 
       <div className="relative mx-auto max-w-[1200px] px-5 sm:px-8 min-h-[88vh] flex items-center">
-        <div className="max-w-2xl py-24 text-cocoa">
+        <div className="max-w-2xl py-24 text-cocoa [text-shadow:0_1px_14px_rgba(255,253,248,0.7)]">
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}

@@ -166,7 +166,7 @@ export const config = {
      Leave "" to show the image instead of a video. */
   videos: {
     hero: "/videos/hero.mp4",
-    proof: "", // dodajte /videos/proof.mp4 kad bude generisan / add when generated
+    proof: "/videos/proof.mp4",
   },
 } as const;
 
