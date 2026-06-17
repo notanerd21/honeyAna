@@ -5,3 +5,7 @@ dist-ssr
 .DS_Store
 .vscode/*
 !.vscode/extensions.json
+
+# dev server log
+dev-server.log
+.playwright-mcp/
