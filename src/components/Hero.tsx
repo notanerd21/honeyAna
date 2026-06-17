@@ -2,11 +2,13 @@ import { motion } from "framer-motion";
 import { config } from "../config";
 import { useLang } from "../LanguageContext";
 import { Img } from "./Img";
-import { viberLink, telLink } from "../lib/links";
+import { telLink } from "../lib/links";
 import { ChevronDown } from "./icons";
+import { useOrder } from "../OrderContext";
 
 export function Hero() {
   const { t, L } = useLang();
+  const { openOrder } = useOrder();
 
   return (
     <section id="top" className="relative overflow-hidden pt-16">
@@ -61,12 +63,12 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.24 }}
             className="mt-9 flex flex-col sm:flex-row gap-3"
           >
-            <a
-              href={viberLink()}
+            <button
+              onClick={() => openOrder()}
               className="inline-flex items-center justify-center rounded-full bg-honey px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-honey/30 hover:bg-honey-deep hover:-translate-y-0.5 transition-all"
             >
               {t.hero.ctaPrimary}
-            </a>
+            </button>
             <a
               href={telLink()}
               className="inline-flex items-center justify-center rounded-full border border-cream/40 px-7 py-3.5 text-base font-semibold text-cream hover:bg-cream/10 transition-colors"

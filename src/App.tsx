@@ -11,10 +11,11 @@ import { Faq } from "./components/Faq";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { FloatingContact } from "./components/FloatingContact";
+import { OrderProvider } from "./OrderContext";
 
 export default function App() {
   return (
-    <>
+    <OrderProvider>
       <Nav />
       <main>
         <Hero />
@@ -30,6 +31,6 @@ export default function App() {
       </main>
       <Footer />
       <FloatingContact />
-    </>
+    </OrderProvider>
   );
 }

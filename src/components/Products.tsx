@@ -2,10 +2,11 @@ import { config } from "../config";
 import { useLang } from "../LanguageContext";
 import { Img } from "./Img";
 import { Reveal } from "./Reveal";
-import { viberLink } from "../lib/links";
+import { useOrder } from "../OrderContext";
 
 export function Products() {
   const { t, L } = useLang();
+  const { openOrder } = useOrder();
 
   return (
     <section id="products" className="py-[clamp(64px,9vw,130px)] bg-surface honeycomb-bg">
@@ -54,12 +55,12 @@ export function Products() {
                       )}
                     </div>
                   </div>
-                  <a
-                    href={viberLink()}
+                  <button
+                    onClick={() => openOrder(p)}
                     className="mt-4 inline-flex items-center justify-center rounded-full bg-honey px-5 py-2.5 text-sm font-semibold text-white hover:bg-honey-deep transition-colors"
                   >
                     {t.products.order}
-                  </a>
+                  </button>
                 </div>
               </article>
             </Reveal>

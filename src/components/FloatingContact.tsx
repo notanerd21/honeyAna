@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { useLang } from "../LanguageContext";
-import { viberLink, telLink } from "../lib/links";
+import { telLink } from "../lib/links";
 import { Chat, Phone } from "./icons";
+import { useOrder } from "../OrderContext";
 
 /** Sticky mobile-first contact buttons — always one tap from ordering. */
 export function FloatingContact() {
   const { t } = useLang();
+  const { openOrder } = useOrder();
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -21,13 +23,13 @@ export function FloatingContact() {
         show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
       }`}
     >
-      <a
-        href={viberLink()}
+      <button
+        onClick={() => openOrder()}
         className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 rounded-full bg-honey px-5 py-3.5 font-semibold text-white shadow-xl shadow-honey/30 hover:bg-honey-deep transition-colors"
       >
         <Chat className="w-5 h-5" />
         {t.hero.ctaPrimary}
-      </a>
+      </button>
       <a
         href={telLink()}
         className="sm:hidden inline-flex items-center justify-center rounded-full bg-night px-5 py-3.5 font-semibold text-cream shadow-xl"

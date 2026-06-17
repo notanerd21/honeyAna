@@ -21,9 +21,19 @@ export const strings = {
 
     hero: {
       eyebrow: `${config.region} · ${yrs} godina tradicije`,
-      ctaPrimary: "Poručite preko Vibera",
+      ctaPrimary: "Poručite",
       ctaSecondary: "Pozovite nas",
       note: "Plaćanje pouzećem · Dostava na kućnu adresu",
+    },
+
+    order: {
+      title: "Kako želite da poručite?",
+      subtitle: "Izaberite način — poruka sa svim detaljima je već spremna.",
+      messageLabel: "Vaša poruka",
+      copy: "Kopiraj poruku",
+      copied: "Kopirano!",
+      viberHint: "Tekst se kopira — nalepite ga u Viber.",
+      close: "Zatvori",
     },
 
     trust: [
@@ -159,9 +169,19 @@ export const strings = {
 
     hero: {
       eyebrow: `${config.region} · ${yrs} years of tradition`,
-      ctaPrimary: "Order via Viber",
+      ctaPrimary: "Order now",
       ctaSecondary: "Call us",
       note: "Cash on delivery · Home delivery",
+    },
+
+    order: {
+      title: "How would you like to order?",
+      subtitle: "Pick a channel — your message with all the details is ready.",
+      messageLabel: "Your message",
+      copy: "Copy message",
+      copied: "Copied!",
+      viberHint: "Text is copied — paste it into Viber.",
+      close: "Close",
     },
 
     trust: [

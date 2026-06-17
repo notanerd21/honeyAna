@@ -43,11 +43,14 @@ export function Contact() {
     }
   }
 
+  const prefill = config.contactPrefill[lang];
+  const emailSubject =
+    lang === "sr" ? `Upit za med — ${config.brandName}` : `Honey inquiry — ${config.brandName}`;
   const channels = [
-    { href: viberLink(), label: t.contact.viber, Icon: Chat, accent: true },
-    { href: waLink(lang), label: t.contact.whatsapp, Icon: Chat, accent: false },
+    { href: viberLink(prefill), label: t.contact.viber, Icon: Chat, accent: true },
+    { href: waLink(prefill), label: t.contact.whatsapp, Icon: Chat, accent: false },
     { href: telLink(), label: `${t.contact.call} · ${config.phoneDisplay}`, Icon: Phone, accent: false },
-    { href: mailLink(), label: config.email, Icon: Mail, accent: false },
+    { href: mailLink(emailSubject, prefill), label: config.email, Icon: Mail, accent: false },
   ];
 
   return (
