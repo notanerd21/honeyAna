@@ -22,8 +22,8 @@ const TARGETS = [
   { file: "honeycomb.jpg",       query: "honeycomb dripping",      orientation: "square",    size: "large" },
   { file: "product-bagrem.jpg",  query: "golden honey jar",        orientation: "square",    size: "large" },
   { file: "product-livada.jpg",  query: "honey jar flowers",       orientation: "square",    size: "large" },
-  { file: "product-lipa.jpg",    query: "honey jar tea",           orientation: "square",    size: "large" },
-  { file: "product-sumski.jpg",  query: "dark amber honey jar",    orientation: "square",    size: "large" },
+  { file: "product-kopriva-polen.jpg",     query: "honey jar pollen",        orientation: "square",    size: "large" },
+  { file: "product-krem-kakao-lesnik.jpg", query: "chocolate hazelnut cream jar", orientation: "square", size: "large" },
 ];
 
 const usedIds = new Set();
