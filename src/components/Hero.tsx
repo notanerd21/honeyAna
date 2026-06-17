@@ -20,8 +20,9 @@ export function Hero() {
           tone="#c8881e"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-night/85 via-night/55 to-night/25" />
-        <div className="absolute inset-0 bg-gradient-to-t from-night/70 to-transparent" />
+        {/* warm, lighter overlay — keeps the left text readable while letting the honey gold show through */}
+        <div className="absolute inset-0 bg-gradient-to-r from-cocoa/80 via-cocoa/35 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-cocoa/55 via-transparent to-transparent" />
       </div>
 
       <div className="relative mx-auto max-w-[1200px] px-5 sm:px-8 min-h-[88vh] flex items-center">
