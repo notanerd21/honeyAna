@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────────────────────
+   Design tokens — "Raw Amber" palette (research-locked).
+   Use as Tailwind utilities: bg-cream, text-cocoa, bg-honey, etc.
+   ───────────────────────────────────────────────────────────── */
+@theme {
+  --color-cream: #fbf6ec;
+  --color-surface: #f3e9d5;
+  --color-honey: #c8881e;
+  --color-honey-deep: #9a5b12;
+  --color-sage: #6b7a4f;
+  --color-cocoa: #2e2014;
+  --color-muted: #6f5a42;
+  --color-night: #1e160e;
+
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+
+  --shadow-card: 0 8px 30px rgba(60, 40, 15, 0.08);
+  --shadow-card-hover: 0 16px 44px rgba(60, 40, 15, 0.16);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-cream);
+  color: var(--color-cocoa);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.08;
+}
+
+/* Subtle honeycomb texture used behind some sections */
+.honeycomb-bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='56' height='100' viewBox='0 0 56 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M28 66L0 50V16l28-16 28 16v34zM28 0L0 16v34l28 16 28-16V16z' fill='none' stroke='%23c8881e' stroke-opacity='0.06' stroke-width='2'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
