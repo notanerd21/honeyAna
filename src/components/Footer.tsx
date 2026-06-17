@@ -14,7 +14,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-night text-cream/80">
+    <footer className="bg-cocoa text-cream/80">
       <div className="h-px bg-gradient-to-r from-transparent via-honey/50 to-transparent" />
       <div className="mx-auto max-w-[1200px] px-5 sm:px-8 py-14 grid sm:grid-cols-3 gap-10">
         <div>

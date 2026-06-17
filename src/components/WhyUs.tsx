@@ -24,7 +24,7 @@ export function WhyUs() {
             const Icon = ICONS[i % ICONS.length];
             return (
               <Reveal key={item.t} delay={i * 0.08}>
-                <div className="h-full bg-surface rounded-3xl p-7 hover:bg-night hover:text-cream transition-colors duration-300 group">
+                <div className="h-full bg-surface rounded-3xl p-7 hover:bg-honey-deep hover:text-cream transition-colors duration-300 group">
                   <div className="grid place-items-center w-12 h-12 rounded-2xl bg-honey/15 text-honey-deep group-hover:bg-honey/25 group-hover:text-honey transition-colors">
                     <Icon className="w-6 h-6" />
                   </div>

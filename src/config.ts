@@ -158,6 +158,15 @@ export const config = {
     story: "/images/beekeeper.jpg",
     lifestyle: "/images/lifestyle.jpg",
     honeycomb: "/images/honeycomb.jpg",
+    proof: "/images/pour.jpg",
+  },
+
+  /* ─── VIDEO (opciono / optional) ───────────────────────────────────
+     Ostavite "" da prikažete sliku umesto videa.
+     Leave "" to show the image instead of a video. */
+  videos: {
+    hero: "/videos/hero.mp4",
+    proof: "", // dodajte /videos/proof.mp4 kad bude generisan / add when generated
   },
 } as const;
 
